@@ -1,14 +1,19 @@
 node {
 	stage('Build') {
-		echo "Build"
+		steps{
+			echo "Build"
+		}
 	}
 	stage('Test') {
-		echo "Test"
+		steps{
+			echo "Test"
+		}
+		
 	}
-	stage('Again Build') {
-		echo "Build"
-	}
-	stage('Again test') {
-		echo "Test"
+	stage('Integration test') {
+		steps{
+			echo "Test"
+		}
+		
 	}
 }
