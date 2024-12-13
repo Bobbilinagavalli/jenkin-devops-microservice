@@ -1,9 +1,5 @@
 pipeline {
-	agent {
-		docker{
-			image 'in28min/hello-world-rest-api'
-		}
-	}
+	agent { docker { image 'in28min/hello-world-rest-api'} }
 	stages{
 		stage('Build') {
 			steps{
