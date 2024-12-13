@@ -1,5 +1,9 @@
 pipeline {
-	agent any
+	agent {
+		docker{
+			image 'valli742/hello-world-python'
+		}
+	}
 	stages{
 		stage('Build') {
 			steps{
