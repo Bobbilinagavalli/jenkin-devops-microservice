@@ -1,7 +1,7 @@
 pipeline {
 	agent {
 		docker{
-			image 'valli742/hello-world-python'
+			image 'in28min/hello-world-rest-api'
 		}
 	}
 	stages{
