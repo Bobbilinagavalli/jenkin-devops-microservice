@@ -1,5 +1,5 @@
 pipeline {
-	agent { docker { image 'in28min/hello-world-rest-api'} }
+	agent { docker { image 'maven:3.6.3'} }
 	stages{
 		stage('Build') {
 			steps{
